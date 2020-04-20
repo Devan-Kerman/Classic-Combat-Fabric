@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "classicombat",
+  "version": "${version}",
+  "name": "Classicombat",
+  "description": "classic combat for fabric",
+  "authors": [
+    "HalfOf2"
+  ],
+  "contact": {
+    "sources": "https://github.com/Devan-Kerman/Classic-Combat-Fabric"
+  },
+  "license": "GPLv3",
+  "icon": "assets/classicombat/icon.png",
+  "environment": "*",
+  "mixins": [
+    "classicombat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.2+build.194",
+    "fabric": "*",
+    "minecraft": ">=1.14"
+  }
+}
