@@ -2,8 +2,15 @@
   "required": true,
   "package": "net.devtech.classicombat.mixin",
   "compatibilityLevel": "JAVA_8",
+  "plugin": "net.devtech.classicombat.ClassiCombatMixinPlugin",
   "mixins": [
-    "PlayerEntityMixin"
+    "blocking.SwordItemMixin",
+    "defense.DamageUtilMixin",
+    "fixdamage.MiningToolItemMixin",
+    "fixdamage.SwordItemMixin",
+    "regen.HungerManagerMixin",
+    "spamclick.PlayerEntityMixin",
+    "test.PlayerListHudMixin"
   ],
   "client": [
   ],
