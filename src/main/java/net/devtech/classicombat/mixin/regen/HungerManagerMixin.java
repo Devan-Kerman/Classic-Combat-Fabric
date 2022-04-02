@@ -1,6 +1,5 @@
 package net.devtech.classicombat.mixin.regen;
 
-import com.sun.org.apache.bcel.internal.generic.GETFIELD;
 import net.minecraft.entity.player.HungerManager;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
