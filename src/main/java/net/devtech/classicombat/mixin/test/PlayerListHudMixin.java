@@ -12,7 +12,7 @@ import java.util.List;
 
 @Mixin(PlayerListHud.class)
 public class PlayerListHudMixin {
-	@Redirect (method = "render", at = @At(value = "INVOKE", target = "Lcom/google/common/collect/Ordering;sortedCopy(Ljava/lang/Iterable;)Ljava/util/List;"))
+	@Redirect (method = "render", at = @At(value = "INVOKE", target = "Lcom/google/common/collect/Ordering;sortedCopy(Ljava/lang/Iterable;)Ljava/util/List;"), remap = false)
 	private <E> List<E> shuffle(Ordering ordering, Iterable<E> elements) {
 		List<E> el = new ArrayList<>();
 		for (E element : elements) {
