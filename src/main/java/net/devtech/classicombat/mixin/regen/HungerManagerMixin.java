@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.injection.*;
 
 @Mixin(HungerManager.class)
 public class HungerManagerMixin {
-	@Redirect(method = "update", at =@At(value = "FIELD", target = "Lnet/minecraft/entity/player/HungerManager;foodSaturationLevel:F", opcode = Opcodes.GETFIELD))
-	private float min(HungerManager manager) {
+	@Redirect(method = "update", at =@At(value = "FIELD", target = "Lnet/minecraft/entity/player/HungerManager;foodLevel:I", opcode = Opcodes.GETFIELD))
+	private int min(HungerManager manager) {
 		return 0;
 	}
 

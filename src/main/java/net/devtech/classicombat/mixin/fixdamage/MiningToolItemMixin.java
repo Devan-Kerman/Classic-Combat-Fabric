@@ -1,7 +1,7 @@
 package net.devtech.classicombat.mixin.fixdamage;
 
 import net.minecraft.item.*;
-import net.minecraft.tag.Tag;
+import net.minecraft.tag.TagKey;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
@@ -15,7 +15,7 @@ public class MiningToolItemMixin {
 	@Mutable @Shadow @Final private float attackDamage;
 
 	@Inject(method = "<init>", at = @At("TAIL"))
-	private void init(float attackDamage, float attackSpeed, ToolMaterial material, Tag effectiveBlocks, Item.Settings settings, CallbackInfo ci) {
+	private void init(float attackDamage, float attackSpeed, ToolMaterial material, TagKey effectiveBlocks, Item.Settings settings, CallbackInfo ci) {
 		if((Object)this instanceof AxeItem) {
 			this.attackDamage = 3 + material.getAttackDamage();
 		} else if((Object)this instanceof PickaxeItem) {
