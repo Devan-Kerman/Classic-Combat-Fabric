@@ -23,6 +23,7 @@ public class ClassiCombatMixinPlugin implements IMixinConfigPlugin {
 		this.properties.setProperty("regen", "true");
 		this.properties.setProperty("blocking", "true");
 		this.properties.setProperty("defense", "true");
+		this.properties.setProperty("render", "true");
 		File file = new File("config", "classicombat.properties");
 		if(file.exists()) {
 			try {

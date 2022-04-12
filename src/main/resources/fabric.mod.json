@@ -17,8 +17,8 @@
     "classicombat.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.8.2+build.194",
+    "fabricloader": "*",
     "fabric": "*",
-    "minecraft": ">=1.14"
+    "minecraft": "*"
   }
 }

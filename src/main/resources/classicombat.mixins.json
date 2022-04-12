@@ -9,10 +9,11 @@
     "fixdamage.MiningToolItemMixin",
     "fixdamage.SwordItemMixin",
     "regen.HungerManagerMixin",
-    "spamclick.PlayerEntityMixin",
-    "test.PlayerListHudMixin"
+    "spamclick.PlayerEntityMixin"
   ],
   "client": [
+    "render.InGameHudMixin",
+    "test.PlayerListHudMixin"
   ],
   "injectors": {
     "defaultRequire": 1
